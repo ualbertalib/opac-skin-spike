@@ -1,15 +1,22 @@
-[2013-09-26 16:37:07,086][INFO ][node                     ] [Agent] version[0.90.5], pid[39570], build[c8714e8/2013-09-17T12:50:20Z]
-[2013-09-26 16:37:07,087][INFO ][node                     ] [Agent] initializing ...
-[2013-09-26 16:37:07,094][INFO ][plugins                  ] [Agent] loaded [], sites []
-[2013-09-26 16:37:10,229][INFO ][node                     ] [Agent] initialized
-[2013-09-26 16:37:10,229][INFO ][node                     ] [Agent] starting ...
-[2013-09-26 16:37:10,511][INFO ][transport                ] [Agent] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.2.0.223:9300]}
-[2013-09-26 16:37:13,680][INFO ][cluster.service          ] [Agent] new_master [Agent][kyYcaFORTMSIRBk_O10Reg][inet[/10.2.0.223:9300]], reason: zen-disco-join (elected_as_master)
-[2013-09-26 16:37:13,795][INFO ][discovery                ] [Agent] elasticsearch/kyYcaFORTMSIRBk_O10Reg
-[2013-09-26 16:37:13,810][INFO ][http                     ] [Agent] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.2.0.223:9200]}
-[2013-09-26 16:37:13,811][INFO ][node                     ] [Agent] started
-[2013-09-26 16:37:13,828][INFO ][gateway                  ] [Agent] recovered [0] indices into cluster_state
-[2013-09-26 16:43:31,275][INFO ][node                     ] [Agent] stopping ...
-[2013-09-26 16:43:31,300][INFO ][node                     ] [Agent] stopped
-[2013-09-26 16:43:31,301][INFO ][node                     ] [Agent] closing ...
-[2013-09-26 16:43:31,308][INFO ][node                     ] [Agent] closed
+[2013-09-28 11:11:04,134][INFO ][node                     ] [Living Brain] version[0.90.5], pid[40705], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-09-28 11:11:04,134][INFO ][node                     ] [Squidboy] version[0.90.5], pid[40709], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-09-28 11:11:04,135][INFO ][node                     ] [Living Brain] initializing ...
+[2013-09-28 11:11:04,135][INFO ][node                     ] [Squidboy] initializing ...
+[2013-09-28 11:11:04,168][INFO ][plugins                  ] [Squidboy] loaded [], sites []
+[2013-09-28 11:11:04,170][INFO ][plugins                  ] [Living Brain] loaded [], sites []
+[2013-09-28 11:11:12,954][INFO ][node                     ] [Squidboy] initialized
+[2013-09-28 11:11:12,954][INFO ][node                     ] [Squidboy] starting ...
+[2013-09-28 11:11:13,015][INFO ][node                     ] [Living Brain] initialized
+[2013-09-28 11:11:13,015][INFO ][node                     ] [Living Brain] starting ...
+[2013-09-28 11:11:13,441][INFO ][transport                ] [Living Brain] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/10.205.139.22:9301]}
+[2013-09-28 11:11:13,441][INFO ][transport                ] [Squidboy] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.205.139.22:9300]}
+[2013-09-28 11:11:16,859][INFO ][cluster.service          ] [Squidboy] new_master [Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]], reason: zen-disco-join (elected_as_master)
+[2013-09-28 11:11:16,908][INFO ][discovery                ] [Squidboy] elasticsearch/CLnyI7HPTUyZIT-hKO-OnA
+[2013-09-28 11:11:16,949][INFO ][http                     ] [Squidboy] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.205.139.22:9200]}
+[2013-09-28 11:11:16,949][INFO ][node                     ] [Squidboy] started
+[2013-09-28 11:11:16,968][INFO ][gateway                  ] [Squidboy] recovered [0] indices into cluster_state
+[2013-09-28 11:11:19,707][INFO ][cluster.service          ] [Squidboy] added {[Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]],}, reason: zen-disco-receive(join from node[[Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]])
+[2013-09-28 11:11:19,759][INFO ][cluster.service          ] [Living Brain] detected_master [Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]], added {[Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]],}, reason: zen-disco-receive(from master [[Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]]])
+[2013-09-28 11:11:19,808][INFO ][discovery                ] [Living Brain] elasticsearch/RlsrHEVMRsqJiRGRVO-PRA
+[2013-09-28 11:11:19,812][INFO ][http                     ] [Living Brain] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/10.205.139.22:9201]}
+[2013-09-28 11:11:19,812][INFO ][node                     ] [Living Brain] started

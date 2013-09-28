@@ -1,0 +1,15 @@
+[2013-09-26 16:37:07,086][INFO ][node                     ] [Agent] version[0.90.5], pid[39570], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-09-26 16:37:07,087][INFO ][node                     ] [Agent] initializing ...
+[2013-09-26 16:37:07,094][INFO ][plugins                  ] [Agent] loaded [], sites []
+[2013-09-26 16:37:10,229][INFO ][node                     ] [Agent] initialized
+[2013-09-26 16:37:10,229][INFO ][node                     ] [Agent] starting ...
+[2013-09-26 16:37:10,511][INFO ][transport                ] [Agent] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.2.0.223:9300]}
+[2013-09-26 16:37:13,680][INFO ][cluster.service          ] [Agent] new_master [Agent][kyYcaFORTMSIRBk_O10Reg][inet[/10.2.0.223:9300]], reason: zen-disco-join (elected_as_master)
+[2013-09-26 16:37:13,795][INFO ][discovery                ] [Agent] elasticsearch/kyYcaFORTMSIRBk_O10Reg
+[2013-09-26 16:37:13,810][INFO ][http                     ] [Agent] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.2.0.223:9200]}
+[2013-09-26 16:37:13,811][INFO ][node                     ] [Agent] started
+[2013-09-26 16:37:13,828][INFO ][gateway                  ] [Agent] recovered [0] indices into cluster_state
+[2013-09-26 16:43:31,275][INFO ][node                     ] [Agent] stopping ...
+[2013-09-26 16:43:31,300][INFO ][node                     ] [Agent] stopped
+[2013-09-26 16:43:31,301][INFO ][node                     ] [Agent] closing ...
+[2013-09-26 16:43:31,308][INFO ][node                     ] [Agent] closed
