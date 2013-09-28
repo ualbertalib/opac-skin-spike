@@ -20,3 +20,11 @@
 [2013-09-28 11:11:19,808][INFO ][discovery                ] [Living Brain] elasticsearch/RlsrHEVMRsqJiRGRVO-PRA
 [2013-09-28 11:11:19,812][INFO ][http                     ] [Living Brain] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/10.205.139.22:9201]}
 [2013-09-28 11:11:19,812][INFO ][node                     ] [Living Brain] started
+[2013-09-28 12:16:11,566][INFO ][cluster.metadata         ] [Squidboy] [catalogue] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
+[2013-09-28 12:16:12,827][INFO ][cluster.metadata         ] [Squidboy] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-09-28 12:19:15,296][INFO ][node                     ] [Squidboy] stopping ...
+[2013-09-28 12:19:15,340][INFO ][discovery.zen            ] [Living Brain] master_left [[Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]]], reason [shut_down]
+[2013-09-28 12:19:15,354][INFO ][cluster.service          ] [Living Brain] master {new [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]], previous [Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]]}, removed {[Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]],}, reason: zen-disco-master_failed ([Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]])
+[2013-09-28 12:19:15,360][INFO ][node                     ] [Squidboy] stopped
+[2013-09-28 12:19:15,361][INFO ][node                     ] [Squidboy] closing ...
+[2013-09-28 12:19:15,365][INFO ][node                     ] [Squidboy] closed
