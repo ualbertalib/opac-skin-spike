@@ -383,3 +383,26 @@ Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: conne
 [2013-09-29 07:33:04,438][INFO ][node                     ] [Ikonn] stopped
 [2013-09-29 07:33:04,438][INFO ][node                     ] [Ikonn] closing ...
 [2013-09-29 07:33:04,472][INFO ][node                     ] [Ikonn] closed
+[2013-09-29 08:13:05,254][INFO ][node                     ] [Advisor] version[0.90.5], pid[44897], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-09-29 08:13:05,290][INFO ][node                     ] [Advisor] initializing ...
+[2013-09-29 08:13:05,343][INFO ][plugins                  ] [Advisor] loaded [], sites []
+[2013-09-29 08:13:13,539][INFO ][node                     ] [Advisor] initialized
+[2013-09-29 08:13:13,539][INFO ][node                     ] [Advisor] starting ...
+[2013-09-29 08:13:14,081][INFO ][transport                ] [Advisor] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.11:9300]}
+[2013-09-29 08:13:17,387][INFO ][cluster.service          ] [Advisor] new_master [Advisor][1tvef6mgR3aUnBcTUf2Syw][inet[/192.168.0.11:9300]], reason: zen-disco-join (elected_as_master)
+[2013-09-29 08:13:17,586][INFO ][discovery                ] [Advisor] elasticsearch/1tvef6mgR3aUnBcTUf2Syw
+[2013-09-29 08:13:17,686][INFO ][http                     ] [Advisor] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.0.11:9200]}
+[2013-09-29 08:13:17,686][INFO ][node                     ] [Advisor] started
+[2013-09-29 08:13:19,396][INFO ][gateway                  ] [Advisor] recovered [1] indices into cluster_state
+[2013-09-29 08:13:29,742][INFO ][cluster.metadata         ] [Advisor] [catalogue] deleting index
+[2013-09-29 08:13:29,977][INFO ][cluster.metadata         ] [Advisor] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-09-29 08:15:16,423][INFO ][cluster.metadata         ] [Advisor] [catalogue] deleting index
+[2013-09-29 08:15:16,574][INFO ][cluster.metadata         ] [Advisor] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-09-29 08:15:16,921][INFO ][cluster.metadata         ] [Advisor] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-09-29 08:16:55,323][INFO ][cluster.metadata         ] [Advisor] [catalogue] deleting index
+[2013-09-29 08:16:55,492][INFO ][cluster.metadata         ] [Advisor] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-09-29 08:16:55,676][INFO ][cluster.metadata         ] [Advisor] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-09-29 08:18:02,127][INFO ][node                     ] [Advisor] stopping ...
+[2013-09-29 08:18:02,191][INFO ][node                     ] [Advisor] stopped
+[2013-09-29 08:18:02,191][INFO ][node                     ] [Advisor] closing ...
+[2013-09-29 08:18:02,238][INFO ][node                     ] [Advisor] closed

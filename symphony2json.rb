@@ -3,17 +3,27 @@ require "active_support/core_ext"
 require "json"
 require "tire"
 
-json_results = []
-doc = Nokogiri::XML(File.open(ARGV[0]).read).remove_namespaces!
-doc.xpath("//HitlistTitleInfo").each do |record|
-  json_record =
-  { :id => record.at_xpath(".//titleID").text, :type=>"Catalogue", :title=>record.at_xpath(".//title").text, :author=>record.xpath(".//author").text, :date=>record.xpath(".//yearOfPublication").text, :isbn=>record.xpath(".//ISBN").text, :oclc=>record.xpath(".//OCLCControlNumber").text, :url=>record.xpath(".//url").text, :call=>record.xpath(".//callNumber").text } 
-  json_results << json_record
-end
+module QuickOpac
+  
+  @@json_results = []
 
-Tire.index 'catalogue' do
-  delete
-  create
-  import json_results
-  refresh
+  def create_json_records(xml)
+    doc = Nokogiri::XML(xml).remove_namespaces!
+    doc.xpath("//HitlistTitleInfo").each do |record|
+      json_record =
+      { :id => record.at_xpath(".//titleID").text, :type=>"Catalogue", :title=>record.at_xpath(".//title").text, :author=>record.xpath(".//author").text, :date=>record.xpath(".//yearOfPublication").text, :isbn=>record.xpath(".//ISBN").text, :oclc=>record.xpath(".//OCLCControlNumber").text, :url=>record.xpath(".//url").text, :call=>record.xpath(".//callNumber").text } 
+      @@json_results << json_record
+    end
+  end
+
+  def post_to_elasticsearch
+    Tire.index 'catalogue' do
+      delete
+      create
+      import @@json_results
+      refresh
+    end
+    @@json_results
+  end
+
 end
