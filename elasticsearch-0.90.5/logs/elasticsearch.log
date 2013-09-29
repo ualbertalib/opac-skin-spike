@@ -1,30 +1,385 @@
-[2013-09-28 11:11:04,134][INFO ][node                     ] [Living Brain] version[0.90.5], pid[40705], build[c8714e8/2013-09-17T12:50:20Z]
-[2013-09-28 11:11:04,134][INFO ][node                     ] [Squidboy] version[0.90.5], pid[40709], build[c8714e8/2013-09-17T12:50:20Z]
-[2013-09-28 11:11:04,135][INFO ][node                     ] [Living Brain] initializing ...
-[2013-09-28 11:11:04,135][INFO ][node                     ] [Squidboy] initializing ...
-[2013-09-28 11:11:04,168][INFO ][plugins                  ] [Squidboy] loaded [], sites []
-[2013-09-28 11:11:04,170][INFO ][plugins                  ] [Living Brain] loaded [], sites []
-[2013-09-28 11:11:12,954][INFO ][node                     ] [Squidboy] initialized
-[2013-09-28 11:11:12,954][INFO ][node                     ] [Squidboy] starting ...
-[2013-09-28 11:11:13,015][INFO ][node                     ] [Living Brain] initialized
-[2013-09-28 11:11:13,015][INFO ][node                     ] [Living Brain] starting ...
-[2013-09-28 11:11:13,441][INFO ][transport                ] [Living Brain] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/10.205.139.22:9301]}
-[2013-09-28 11:11:13,441][INFO ][transport                ] [Squidboy] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.205.139.22:9300]}
-[2013-09-28 11:11:16,859][INFO ][cluster.service          ] [Squidboy] new_master [Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]], reason: zen-disco-join (elected_as_master)
-[2013-09-28 11:11:16,908][INFO ][discovery                ] [Squidboy] elasticsearch/CLnyI7HPTUyZIT-hKO-OnA
-[2013-09-28 11:11:16,949][INFO ][http                     ] [Squidboy] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.205.139.22:9200]}
-[2013-09-28 11:11:16,949][INFO ][node                     ] [Squidboy] started
-[2013-09-28 11:11:16,968][INFO ][gateway                  ] [Squidboy] recovered [0] indices into cluster_state
-[2013-09-28 11:11:19,707][INFO ][cluster.service          ] [Squidboy] added {[Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]],}, reason: zen-disco-receive(join from node[[Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]])
-[2013-09-28 11:11:19,759][INFO ][cluster.service          ] [Living Brain] detected_master [Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]], added {[Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]],}, reason: zen-disco-receive(from master [[Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]]])
-[2013-09-28 11:11:19,808][INFO ][discovery                ] [Living Brain] elasticsearch/RlsrHEVMRsqJiRGRVO-PRA
-[2013-09-28 11:11:19,812][INFO ][http                     ] [Living Brain] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/10.205.139.22:9201]}
-[2013-09-28 11:11:19,812][INFO ][node                     ] [Living Brain] started
-[2013-09-28 12:16:11,566][INFO ][cluster.metadata         ] [Squidboy] [catalogue] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
-[2013-09-28 12:16:12,827][INFO ][cluster.metadata         ] [Squidboy] [catalogue] update_mapping [Catalogue] (dynamic)
-[2013-09-28 12:19:15,296][INFO ][node                     ] [Squidboy] stopping ...
-[2013-09-28 12:19:15,340][INFO ][discovery.zen            ] [Living Brain] master_left [[Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]]], reason [shut_down]
-[2013-09-28 12:19:15,354][INFO ][cluster.service          ] [Living Brain] master {new [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]], previous [Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]]}, removed {[Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]],}, reason: zen-disco-master_failed ([Squidboy][CLnyI7HPTUyZIT-hKO-OnA][inet[/10.205.139.22:9300]])
-[2013-09-28 12:19:15,360][INFO ][node                     ] [Squidboy] stopped
-[2013-09-28 12:19:15,361][INFO ][node                     ] [Squidboy] closing ...
-[2013-09-28 12:19:15,365][INFO ][node                     ] [Squidboy] closed
+[2013-09-29 00:00:32,777][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:04:33,656][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:08:34,038][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:12:34,477][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:16:34,878][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:20:35,377][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:24:35,767][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:28:36,097][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:32:36,516][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:36:36,942][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:40:37,372][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:44:37,875][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 00:48:38,549][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 10:20:09,684][WARN ][transport.netty          ] [Living Brain] exception caught on transport layer [[id: 0xd93ead7f]], closing connection
+java.net.NoRouteToHostException: No route to host
+	at sun.nio.ch.Net.connect0(Native Method)
+	at sun.nio.ch.Net.connect(Net.java:465)
+	at sun.nio.ch.Net.connect(Net.java:457)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:666)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:108)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:70)
+	at org.elasticsearch.common.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:574)
+	at org.elasticsearch.common.netty.channel.Channels.connect(Channels.java:634)
+	at org.elasticsearch.common.netty.channel.AbstractChannel.connect(AbstractChannel.java:207)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.elasticsearch.common.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:659)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+[2013-09-29 10:21:30,126][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 10:25:35,590][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 10:25:35,595][WARN ][monitor.jvm              ] [Living Brain] [gc][ParNew][23383][5] duration [4.6s], collections [1]/[5.4s], total [4.6s]/[5.8s], memory [88mb]->[19.5mb]/[990.7mb], all_pools {[Code Cache] [1.3mb]->[1.3mb]/[48mb]}{[Par Eden Space] [68.3mb]->[1.1mb]/[266.2mb]}{[Par Survivor Space] [6mb]->[1.8mb]/[33.2mb]}{[CMS Old Gen] [13.7mb]->[16.4mb]/[691.2mb]}{[CMS Perm Gen] [27.7mb]->[27.7mb]/[82mb]}
+[2013-09-29 10:29:35,979][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 10:33:36,402][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 10:37:36,994][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 10:41:37,627][WARN ][cluster.service          ] [Living Brain] failed to reconnect to node [Living Brain][RlsrHEVMRsqJiRGRVO-PRA][inet[/10.205.139.22:9301]]
+org.elasticsearch.transport.ConnectTransportException: [Living Brain][inet[/10.205.139.22:9301]] connect_timeout[30s]
+	at org.elasticsearch.transport.netty.NettyTransport.connectToChannels(NettyTransport.java:675)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:608)
+	at org.elasticsearch.transport.netty.NettyTransport.connectToNode(NettyTransport.java:576)
+	at org.elasticsearch.transport.TransportService.connectToNode(TransportService.java:129)
+	at org.elasticsearch.cluster.service.InternalClusterService$ReconnectToNodes.run(InternalClusterService.java:475)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: connection timed out: /10.205.139.22:9301
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.processConnectTimeout(NioClientBoss.java:137)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.process(NioClientBoss.java:83)
+	at org.elasticsearch.common.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:312)
+	at org.elasticsearch.common.netty.channel.socket.nio.NioClientBoss.run(NioClientBoss.java:42)
+	at org.elasticsearch.common.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.elasticsearch.common.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	... 3 more
+[2013-09-29 07:25:46,661][INFO ][node                     ] [Ikonn] version[0.90.5], pid[44416], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-09-29 07:25:46,678][INFO ][node                     ] [Ikonn] initializing ...
+[2013-09-29 07:25:46,720][INFO ][plugins                  ] [Ikonn] loaded [], sites []
+[2013-09-29 07:25:52,045][INFO ][node                     ] [Ikonn] initialized
+[2013-09-29 07:25:52,045][INFO ][node                     ] [Ikonn] starting ...
+[2013-09-29 07:25:52,233][INFO ][transport                ] [Ikonn] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.11:9300]}
+[2013-09-29 07:25:55,354][INFO ][cluster.service          ] [Ikonn] new_master [Ikonn][K_44NHf0TPadQsUzjTwkzg][inet[/192.168.0.11:9300]], reason: zen-disco-join (elected_as_master)
+[2013-09-29 07:25:55,493][INFO ][discovery                ] [Ikonn] elasticsearch/K_44NHf0TPadQsUzjTwkzg
+[2013-09-29 07:25:55,579][INFO ][http                     ] [Ikonn] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.0.11:9200]}
+[2013-09-29 07:25:55,580][INFO ][node                     ] [Ikonn] started
+[2013-09-29 07:25:57,813][INFO ][gateway                  ] [Ikonn] recovered [1] indices into cluster_state
+[2013-09-29 07:28:40,670][INFO ][cluster.metadata         ] [Ikonn] [catalogue] deleting index
+[2013-09-29 07:28:40,941][INFO ][cluster.metadata         ] [Ikonn] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-09-29 07:28:41,175][INFO ][cluster.metadata         ] [Ikonn] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-09-29 07:29:45,968][INFO ][cluster.metadata         ] [Ikonn] [catalogue] deleting index
+[2013-09-29 07:29:46,130][INFO ][cluster.metadata         ] [Ikonn] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-09-29 07:29:46,309][INFO ][cluster.metadata         ] [Ikonn] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-09-29 07:33:04,368][INFO ][node                     ] [Ikonn] stopping ...
+[2013-09-29 07:33:04,438][INFO ][node                     ] [Ikonn] stopped
+[2013-09-29 07:33:04,438][INFO ][node                     ] [Ikonn] closing ...
+[2013-09-29 07:33:04,472][INFO ][node                     ] [Ikonn] closed

@@ -12,5 +12,8 @@ doc.xpath("//HitlistTitleInfo").each do |record|
 end
 
 Tire.index 'catalogue' do
+  delete
+  create
   import json_results
+  refresh
 end
