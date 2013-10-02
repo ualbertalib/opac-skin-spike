@@ -1,8 +1,9 @@
 <!doctype html>
 <head><title>search results</title></head>
 <body>
-  <p>You searched for <%= @query %></p>
-  <p>The catalogue returned: </p>
+  <p>You searched for <%= @query %> in <%= @searchType %></p>
+  <p>The catalogue returned <%= @hitcount %> results: </p>
   <p><%= @results %></p>
+  <p>Catalogue search string: <%= @query_string %>
 </body>
 </html>

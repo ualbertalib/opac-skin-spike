@@ -406,3 +406,139 @@ Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: conne
 [2013-09-29 08:18:02,191][INFO ][node                     ] [Advisor] stopped
 [2013-09-29 08:18:02,191][INFO ][node                     ] [Advisor] closing ...
 [2013-09-29 08:18:02,238][INFO ][node                     ] [Advisor] closed
+[2013-10-02 13:23:01,294][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 13:23:01,465][INFO ][node                     ] [Aged Genghis] version[0.90.5], pid[4620], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 13:23:01,465][INFO ][node                     ] [Aged Genghis] initializing ...
+[2013-10-02 13:23:01,471][INFO ][plugins                  ] [Aged Genghis] loaded [], sites []
+[2013-10-02 13:23:06,690][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 13:23:06,784][INFO ][node                     ] [Wiz Kid] version[0.90.5], pid[4650], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 13:23:06,784][INFO ][node                     ] [Wiz Kid] initializing ...
+[2013-10-02 13:23:06,790][INFO ][plugins                  ] [Wiz Kid] loaded [], sites []
+[2013-10-02 13:23:09,164][INFO ][node                     ] [Wiz Kid] initialized
+[2013-10-02 13:23:09,165][INFO ][node                     ] [Wiz Kid] starting ...
+[2013-10-02 13:23:09,254][INFO ][transport                ] [Wiz Kid] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 13:23:12,460][INFO ][cluster.service          ] [Wiz Kid] new_master [Wiz Kid][slehAlWWQn-M-aPMuYs2UA][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 13:23:12,544][INFO ][discovery                ] [Wiz Kid] elasticsearch/slehAlWWQn-M-aPMuYs2UA
+[2013-10-02 13:23:12,584][INFO ][http                     ] [Wiz Kid] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/129.128.217.111:9200]}
+[2013-10-02 13:23:12,585][INFO ][node                     ] [Wiz Kid] started
+[2013-10-02 13:23:12,618][INFO ][gateway                  ] [Wiz Kid] recovered [0] indices into cluster_state
+[2013-10-02 13:25:07,103][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 13:25:07,200][INFO ][node                     ] [Tethlam] version[0.90.5], pid[4809], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 13:25:07,200][INFO ][node                     ] [Tethlam] initializing ...
+[2013-10-02 13:25:07,206][INFO ][plugins                  ] [Tethlam] loaded [], sites []
+[2013-10-02 13:25:09,662][INFO ][node                     ] [Tethlam] initialized
+[2013-10-02 13:25:09,662][INFO ][node                     ] [Tethlam] starting ...
+[2013-10-02 13:25:09,749][INFO ][transport                ] [Tethlam] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 13:25:12,854][INFO ][cluster.service          ] [Tethlam] new_master [Tethlam][agxr6tWVRme9_qsPQ0OJWg][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 13:25:12,920][INFO ][discovery                ] [Tethlam] elasticsearch/agxr6tWVRme9_qsPQ0OJWg
+[2013-10-02 13:25:12,956][INFO ][http                     ] [Tethlam] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/129.128.217.111:9200]}
+[2013-10-02 13:25:12,956][INFO ][node                     ] [Tethlam] started
+[2013-10-02 13:25:12,991][INFO ][gateway                  ] [Tethlam] recovered [0] indices into cluster_state
+[2013-10-02 13:26:44,259][INFO ][cluster.metadata         ] [Tethlam] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 13:26:44,710][INFO ][cluster.metadata         ] [Tethlam] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:16:18,100][INFO ][cluster.metadata         ] [Tethlam] [catalogue] deleting index
+[2013-10-02 14:16:18,150][INFO ][cluster.metadata         ] [Tethlam] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:16:55,332][INFO ][cluster.metadata         ] [Tethlam] [catalogue] deleting index
+[2013-10-02 14:16:55,375][INFO ][cluster.metadata         ] [Tethlam] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:17:11,153][INFO ][node                     ] [Tethlam] stopping ...
+[2013-10-02 14:17:11,199][INFO ][node                     ] [Tethlam] stopped
+[2013-10-02 14:17:11,199][INFO ][node                     ] [Tethlam] closing ...
+[2013-10-02 14:17:11,209][INFO ][node                     ] [Tethlam] closed
+[2013-10-02 14:17:19,562][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:17:19,656][INFO ][node                     ] [Chtylok] version[0.90.5], pid[5185], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:17:19,656][INFO ][node                     ] [Chtylok] initializing ...
+[2013-10-02 14:17:19,662][INFO ][plugins                  ] [Chtylok] loaded [], sites []
+[2013-10-02 14:17:22,041][INFO ][node                     ] [Chtylok] initialized
+[2013-10-02 14:17:22,041][INFO ][node                     ] [Chtylok] starting ...
+[2013-10-02 14:17:22,184][INFO ][transport                ] [Chtylok] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 14:17:25,227][INFO ][cluster.service          ] [Chtylok] new_master [Chtylok][2qPuTX1lQEuku_d_VUaYrA][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:17:25,293][INFO ][discovery                ] [Chtylok] elasticsearch/2qPuTX1lQEuku_d_VUaYrA
+[2013-10-02 14:17:25,329][INFO ][http                     ] [Chtylok] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/129.128.217.111:9200]}
+[2013-10-02 14:17:25,329][INFO ][node                     ] [Chtylok] started
+[2013-10-02 14:17:25,904][INFO ][gateway                  ] [Chtylok] recovered [1] indices into cluster_state
+[2013-10-02 14:17:50,271][INFO ][cluster.metadata         ] [Chtylok] [catalogue] deleting index
+[2013-10-02 14:17:50,344][INFO ][cluster.metadata         ] [Chtylok] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:18:02,606][INFO ][node                     ] [Chtylok] stopping ...
+[2013-10-02 14:18:02,666][INFO ][node                     ] [Chtylok] stopped
+[2013-10-02 14:18:02,666][INFO ][node                     ] [Chtylok] closing ...
+[2013-10-02 14:18:02,676][INFO ][node                     ] [Chtylok] closed
+[2013-10-02 14:18:42,065][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:18:42,160][INFO ][node                     ] [Gravity] version[0.90.5], pid[5346], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:18:42,161][INFO ][node                     ] [Gravity] initializing ...
+[2013-10-02 14:18:42,167][INFO ][plugins                  ] [Gravity] loaded [], sites []
+[2013-10-02 14:18:44,573][INFO ][node                     ] [Gravity] initialized
+[2013-10-02 14:18:44,573][INFO ][node                     ] [Gravity] starting ...
+[2013-10-02 14:18:44,725][INFO ][transport                ] [Gravity] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 14:18:47,302][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:18:47,399][INFO ][node                     ] [Firearm] version[0.90.5], pid[5393], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:18:47,399][INFO ][node                     ] [Firearm] initializing ...
+[2013-10-02 14:18:47,405][INFO ][plugins                  ] [Firearm] loaded [], sites []
+[2013-10-02 14:18:47,770][INFO ][cluster.service          ] [Gravity] new_master [Gravity][VKK7m9B2QyKOGOw8xbHBRQ][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:18:47,829][INFO ][discovery                ] [Gravity] elasticsearch/VKK7m9B2QyKOGOw8xbHBRQ
+[2013-10-02 14:18:47,864][INFO ][http                     ] [Gravity] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/129.128.217.111:9200]}
+[2013-10-02 14:18:47,864][INFO ][node                     ] [Gravity] started
+[2013-10-02 14:18:48,908][INFO ][gateway                  ] [Gravity] recovered [1] indices into cluster_state
+[2013-10-02 14:18:50,510][INFO ][node                     ] [Firearm] initialized
+[2013-10-02 14:18:50,510][INFO ][node                     ] [Firearm] starting ...
+[2013-10-02 14:18:50,601][INFO ][transport                ] [Firearm] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/129.128.217.111:9301]}
+[2013-10-02 14:18:53,709][INFO ][cluster.service          ] [Firearm] new_master [Firearm][YS9zfjdtS8OB7GgVlsuWCg][inet[/129.128.217.111:9301]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:18:53,774][INFO ][discovery                ] [Firearm] elasticsearch/YS9zfjdtS8OB7GgVlsuWCg
+[2013-10-02 14:18:53,811][INFO ][http                     ] [Firearm] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/129.128.217.111:9201]}
+[2013-10-02 14:18:53,811][INFO ][node                     ] [Firearm] started
+[2013-10-02 14:18:53,858][INFO ][gateway                  ] [Firearm] recovered [0] indices into cluster_state
+[2013-10-02 14:18:57,659][INFO ][node                     ] [Firearm] stopping ...
+[2013-10-02 14:18:57,696][INFO ][node                     ] [Firearm] stopped
+[2013-10-02 14:18:57,697][INFO ][node                     ] [Firearm] closing ...
+[2013-10-02 14:18:57,707][INFO ][node                     ] [Firearm] closed
+[2013-10-02 14:19:00,508][INFO ][node                     ] [Gravity] stopping ...
+[2013-10-02 14:19:00,562][INFO ][node                     ] [Gravity] stopped
+[2013-10-02 14:19:00,562][INFO ][node                     ] [Gravity] closing ...
+[2013-10-02 14:19:00,571][INFO ][node                     ] [Gravity] closed
+[2013-10-02 14:19:03,335][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:19:03,430][INFO ][node                     ] [Sprite] version[0.90.5], pid[5501], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:19:03,430][INFO ][node                     ] [Sprite] initializing ...
+[2013-10-02 14:19:03,436][INFO ][plugins                  ] [Sprite] loaded [], sites []
+[2013-10-02 14:19:05,819][INFO ][node                     ] [Sprite] initialized
+[2013-10-02 14:19:05,820][INFO ][node                     ] [Sprite] starting ...
+[2013-10-02 14:19:05,977][INFO ][transport                ] [Sprite] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 14:19:09,021][INFO ][cluster.service          ] [Sprite] new_master [Sprite][oHczJDFHTBqzXoZGvAKG4g][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:19:09,086][INFO ][discovery                ] [Sprite] elasticsearch/oHczJDFHTBqzXoZGvAKG4g
+[2013-10-02 14:19:09,123][INFO ][http                     ] [Sprite] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/129.128.217.111:9200]}
+[2013-10-02 14:19:09,123][INFO ][node                     ] [Sprite] started
+[2013-10-02 14:19:09,681][INFO ][gateway                  ] [Sprite] recovered [1] indices into cluster_state
+[2013-10-02 14:19:24,373][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:19:24,470][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:19:24,729][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:22:46,074][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:22:46,176][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:22:46,306][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:23:13,911][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:23:13,980][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:23:14,141][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:23:14,150][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:24:59,249][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:24:59,317][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:24:59,414][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:25:36,701][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:25:36,772][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:25:36,892][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:29:08,940][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:29:09,010][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:29:09,157][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:29:29,764][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:29:29,833][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:29:29,980][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:29:41,165][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:29:41,273][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:29:41,393][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:30:07,134][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:30:07,196][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:30:07,341][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:30:07,351][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:30:13,223][INFO ][cluster.metadata         ] [Sprite] [catalogue] deleting index
+[2013-10-02 14:30:13,281][INFO ][cluster.metadata         ] [Sprite] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:30:13,382][INFO ][cluster.metadata         ] [Sprite] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:30:29,505][INFO ][node                     ] [Sprite] stopping ...
+[2013-10-02 14:30:29,553][INFO ][node                     ] [Sprite] stopped
+[2013-10-02 14:30:29,553][INFO ][node                     ] [Sprite] closing ...
+[2013-10-02 14:30:29,578][INFO ][node                     ] [Sprite] closed
