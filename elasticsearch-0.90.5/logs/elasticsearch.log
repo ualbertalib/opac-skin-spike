@@ -542,3 +542,219 @@ Caused by: org.elasticsearch.common.netty.channel.ConnectTimeoutException: conne
 [2013-10-02 14:30:29,553][INFO ][node                     ] [Sprite] stopped
 [2013-10-02 14:30:29,553][INFO ][node                     ] [Sprite] closing ...
 [2013-10-02 14:30:29,578][INFO ][node                     ] [Sprite] closed
+[2013-10-02 14:36:45,332][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:36:45,429][INFO ][node                     ] [Ransak the Reject] version[0.90.5], pid[6112], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:36:45,429][INFO ][node                     ] [Ransak the Reject] initializing ...
+[2013-10-02 14:36:45,435][INFO ][plugins                  ] [Ransak the Reject] loaded [], sites []
+[2013-10-02 14:36:47,857][INFO ][node                     ] [Ransak the Reject] initialized
+[2013-10-02 14:36:47,857][INFO ][node                     ] [Ransak the Reject] starting ...
+[2013-10-02 14:36:48,004][INFO ][transport                ] [Ransak the Reject] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 14:36:51,049][INFO ][cluster.service          ] [Ransak the Reject] new_master [Ransak the Reject][Z7h44ho2TA2WTeLd5AGjGQ][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:36:51,116][INFO ][discovery                ] [Ransak the Reject] elasticsearch/Z7h44ho2TA2WTeLd5AGjGQ
+[2013-10-02 14:36:51,155][INFO ][http                     ] [Ransak the Reject] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/129.128.217.111:9200]}
+[2013-10-02 14:36:51,155][INFO ][node                     ] [Ransak the Reject] started
+[2013-10-02 14:36:51,774][INFO ][gateway                  ] [Ransak the Reject] recovered [1] indices into cluster_state
+[2013-10-02 14:37:30,003][INFO ][cluster.metadata         ] [Ransak the Reject] [catalogue] deleting index
+[2013-10-02 14:37:30,119][INFO ][cluster.metadata         ] [Ransak the Reject] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:37:30,299][INFO ][cluster.metadata         ] [Ransak the Reject] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:40:46,369][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:40:46,479][INFO ][node                     ] [Bob] version[0.90.5], pid[6389], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:40:46,479][INFO ][node                     ] [Bob] initializing ...
+[2013-10-02 14:40:46,486][INFO ][plugins                  ] [Bob] loaded [], sites []
+[2013-10-02 14:40:49,037][INFO ][node                     ] [Bob] initialized
+[2013-10-02 14:40:49,038][INFO ][node                     ] [Bob] starting ...
+[2013-10-02 14:40:49,122][INFO ][transport                ] [Bob] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/129.128.217.111:9301]}
+[2013-10-02 14:40:52,215][INFO ][cluster.service          ] [Bob] new_master [Bob][maZKd6xYTySsePuQ8bV8Ow][inet[/129.128.217.111:9301]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:40:52,283][INFO ][discovery                ] [Bob] elasticsearch/maZKd6xYTySsePuQ8bV8Ow
+[2013-10-02 14:40:52,321][ERROR][bootstrap                ] [Bob] {0.90.5}: Startup Failed ...
+- BindHttpException[Failed to bind to [8983]]
+	ChannelException[Failed to bind to: 0.0.0.0/0.0.0.0:8983]
+		BindException[Address already in use]
+[2013-10-02 14:40:52,326][INFO ][node                     ] [Bob] stopping ...
+[2013-10-02 14:40:52,359][INFO ][gateway                  ] [Bob] recovered [0] indices into cluster_state
+[2013-10-02 14:40:52,373][INFO ][node                     ] [Bob] stopped
+[2013-10-02 14:40:52,373][INFO ][node                     ] [Bob] closing ...
+[2013-10-02 14:40:52,378][INFO ][node                     ] [Bob] closed
+[2013-10-02 14:41:13,498][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:41:13,592][INFO ][node                     ] [Victor von Doom] version[0.90.5], pid[6483], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:41:13,593][INFO ][node                     ] [Victor von Doom] initializing ...
+[2013-10-02 14:41:13,599][INFO ][plugins                  ] [Victor von Doom] loaded [], sites []
+[2013-10-02 14:41:15,977][INFO ][node                     ] [Victor von Doom] initialized
+[2013-10-02 14:41:15,977][INFO ][node                     ] [Victor von Doom] starting ...
+[2013-10-02 14:41:16,134][INFO ][transport                ] [Victor von Doom] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 14:41:19,178][INFO ][cluster.service          ] [Victor von Doom] new_master [Victor von Doom][pqAomflISECUzWeLs9z36g][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:41:19,241][INFO ][discovery                ] [Victor von Doom] elasticsearch/pqAomflISECUzWeLs9z36g
+[2013-10-02 14:41:19,284][ERROR][bootstrap                ] [Victor von Doom] {0.90.5}: Startup Failed ...
+- BindHttpException[Failed to bind to [8983]]
+	ChannelException[Failed to bind to: 0.0.0.0/0.0.0.0:8983]
+		BindException[Address already in use]
+[2013-10-02 14:41:19,290][INFO ][node                     ] [Victor von Doom] stopping ...
+[2013-10-02 14:41:19,349][INFO ][gateway                  ] [Victor von Doom] recovered [1] indices into cluster_state
+[2013-10-02 14:41:19,378][INFO ][node                     ] [Victor von Doom] stopped
+[2013-10-02 14:41:19,379][INFO ][node                     ] [Victor von Doom] closing ...
+[2013-10-02 14:41:19,388][INFO ][node                     ] [Victor von Doom] closed
+[2013-10-02 14:41:49,709][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:41:49,804][INFO ][node                     ] [Mace, Gideon] version[0.90.5], pid[6596], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:41:49,805][INFO ][node                     ] [Mace, Gideon] initializing ...
+[2013-10-02 14:41:49,811][INFO ][plugins                  ] [Mace, Gideon] loaded [], sites []
+[2013-10-02 14:41:52,264][INFO ][node                     ] [Mace, Gideon] initialized
+[2013-10-02 14:41:52,264][INFO ][node                     ] [Mace, Gideon] starting ...
+[2013-10-02 14:41:52,415][INFO ][transport                ] [Mace, Gideon] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 14:41:55,464][INFO ][cluster.service          ] [Mace, Gideon] new_master [Mace, Gideon][ECoFZ7L9SjaqYIUiqf82Og][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:41:55,534][INFO ][discovery                ] [Mace, Gideon] elasticsearch/ECoFZ7L9SjaqYIUiqf82Og
+[2013-10-02 14:41:55,570][INFO ][http                     ] [Mace, Gideon] bound_address {inet[/0:0:0:0:0:0:0:0:8983]}, publish_address {inet[/129.128.217.111:8983]}
+[2013-10-02 14:41:55,570][INFO ][node                     ] [Mace, Gideon] started
+[2013-10-02 14:41:56,212][INFO ][gateway                  ] [Mace, Gideon] recovered [1] indices into cluster_state
+[2013-10-02 14:42:33,921][INFO ][node                     ] [Mace, Gideon] stopping ...
+[2013-10-02 14:42:33,975][INFO ][node                     ] [Mace, Gideon] stopped
+[2013-10-02 14:42:33,975][INFO ][node                     ] [Mace, Gideon] closing ...
+[2013-10-02 14:42:33,984][INFO ][node                     ] [Mace, Gideon] closed
+[2013-10-02 14:43:10,373][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:43:10,466][INFO ][node                     ] [Astrid Bloom] version[0.90.5], pid[6798], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:43:10,466][INFO ][node                     ] [Astrid Bloom] initializing ...
+[2013-10-02 14:43:10,472][INFO ][plugins                  ] [Astrid Bloom] loaded [], sites []
+[2013-10-02 14:43:12,953][INFO ][node                     ] [Astrid Bloom] initialized
+[2013-10-02 14:43:12,953][INFO ][node                     ] [Astrid Bloom] starting ...
+[2013-10-02 14:43:13,100][INFO ][transport                ] [Astrid Bloom] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/129.128.217.111:9300]}
+[2013-10-02 14:43:16,146][INFO ][cluster.service          ] [Astrid Bloom] new_master [Astrid Bloom][XcMSnN5FTG-4f_UpdI6Uhw][inet[/129.128.217.111:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:43:16,213][INFO ][discovery                ] [Astrid Bloom] elasticsearch/XcMSnN5FTG-4f_UpdI6Uhw
+[2013-10-02 14:43:16,251][INFO ][http                     ] [Astrid Bloom] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/129.128.217.111:9200]}
+[2013-10-02 14:43:16,251][INFO ][node                     ] [Astrid Bloom] started
+[2013-10-02 14:43:16,910][INFO ][gateway                  ] [Astrid Bloom] recovered [1] indices into cluster_state
+[2013-10-02 14:44:04,685][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:44:04,781][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:44:05,068][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:51:11,875][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:51:11,967][INFO ][node                     ] [Hoder] version[0.90.5], pid[7178], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:51:11,968][INFO ][node                     ] [Hoder] initializing ...
+[2013-10-02 14:51:11,973][INFO ][plugins                  ] [Hoder] loaded [], sites []
+[2013-10-02 14:51:14,342][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 14:51:14,436][INFO ][node                     ] [Gravity] version[0.90.5], pid[7205], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 14:51:14,436][INFO ][node                     ] [Gravity] initializing ...
+[2013-10-02 14:51:14,442][INFO ][plugins                  ] [Gravity] loaded [], sites []
+[2013-10-02 14:51:16,807][INFO ][node                     ] [Gravity] initialized
+[2013-10-02 14:51:16,807][INFO ][node                     ] [Gravity] starting ...
+[2013-10-02 14:51:16,948][INFO ][transport                ] [Gravity] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/129.128.217.111:9301]}
+[2013-10-02 14:51:19,995][INFO ][cluster.service          ] [Gravity] new_master [Gravity][H7z2DQ5qQuOhpKE4WOMPaA][inet[/129.128.217.111:9301]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 14:51:20,057][INFO ][discovery                ] [Gravity] elasticsearch/H7z2DQ5qQuOhpKE4WOMPaA
+[2013-10-02 14:51:20,094][INFO ][http                     ] [Gravity] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/129.128.217.111:9201]}
+[2013-10-02 14:51:20,094][INFO ][node                     ] [Gravity] started
+[2013-10-02 14:51:20,132][INFO ][gateway                  ] [Gravity] recovered [0] indices into cluster_state
+[2013-10-02 14:52:02,154][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:52:02,247][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:52:02,371][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:52:07,504][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:52:07,569][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:52:32,293][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:52:32,390][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:52:32,497][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:52:38,607][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:52:38,645][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:55:06,958][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:55:07,030][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:55:07,180][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:55:13,632][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:55:13,683][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:58:42,917][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:58:43,025][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 14:58:43,166][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 14:58:49,468][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 14:58:49,510][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:00:20,786][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:00:20,844][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:00:20,985][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:00:27,251][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:00:27,284][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:02:29,986][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:02:30,041][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:02:30,171][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:02:36,355][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:02:36,385][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:04:31,551][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:04:31,602][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:04:31,730][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:04:38,580][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:04:38,614][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:04:57,689][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:04:57,738][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:04:57,840][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:05:04,742][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:05:04,775][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:05:22,149][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:05:22,219][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:05:22,319][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:05:29,375][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:05:29,404][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:07:35,618][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:07:35,674][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:07:35,807][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:07:42,834][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:07:42,866][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:08:15,988][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:08:16,038][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:08:16,170][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:08:23,283][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:08:23,314][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:08:23,419][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:08:23,444][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:12:29,945][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:12:29,992][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:12:30,088][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:12:37,104][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:12:37,135][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:13:23,794][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:13:23,843][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:13:23,951][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:13:29,850][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:13:29,879][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:14:25,058][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:14:25,106][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:14:25,217][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:15:03,027][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:15:03,081][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:15:03,190][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:15:03,197][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:15:53,965][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:15:54,015][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:15:54,143][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:15:54,156][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:15:55,506][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:15:55,609][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:15:55,731][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:15:55,740][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:17:58,198][INFO ][node                     ] [Gravity] stopping ...
+[2013-10-02 15:17:58,232][INFO ][node                     ] [Gravity] stopped
+[2013-10-02 15:17:58,233][INFO ][node                     ] [Gravity] closing ...
+[2013-10-02 15:17:58,243][INFO ][node                     ] [Gravity] closed
+[2013-10-02 15:18:06,149][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-02 15:18:06,245][INFO ][node                     ] [Solarman] version[0.90.5], pid[8695], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-02 15:18:06,245][INFO ][node                     ] [Solarman] initializing ...
+[2013-10-02 15:18:06,252][INFO ][plugins                  ] [Solarman] loaded [], sites []
+[2013-10-02 15:18:08,749][INFO ][node                     ] [Solarman] initialized
+[2013-10-02 15:18:08,749][INFO ][node                     ] [Solarman] starting ...
+[2013-10-02 15:18:08,885][INFO ][transport                ] [Solarman] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/129.128.217.111:9301]}
+[2013-10-02 15:18:11,930][INFO ][cluster.service          ] [Solarman] new_master [Solarman][Nj-nvLntRIyATHwT2jWp4A][inet[/129.128.217.111:9301]], reason: zen-disco-join (elected_as_master)
+[2013-10-02 15:18:11,992][INFO ][discovery                ] [Solarman] elasticsearch/Nj-nvLntRIyATHwT2jWp4A
+[2013-10-02 15:18:12,030][INFO ][http                     ] [Solarman] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/129.128.217.111:9201]}
+[2013-10-02 15:18:12,030][INFO ][node                     ] [Solarman] started
+[2013-10-02 15:18:12,062][INFO ][gateway                  ] [Solarman] recovered [0] indices into cluster_state
+[2013-10-02 15:18:38,506][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:18:38,571][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:18:38,684][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:18:38,693][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:18:42,019][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:18:42,105][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:18:42,251][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:19:21,232][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:19:21,283][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:19:21,368][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:19:47,623][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:19:47,675][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:19:47,749][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:20:00,617][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] deleting index
+[2013-10-02 15:20:00,668][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] creating index, cause [api], shards [5]/[1], mappings []
+[2013-10-02 15:20:00,798][INFO ][cluster.metadata         ] [Astrid Bloom] [catalogue] update_mapping [Catalogue] (dynamic)
+[2013-10-02 15:27:14,242][INFO ][node                     ] [Solarman] stopping ...
+[2013-10-02 15:27:14,277][INFO ][node                     ] [Solarman] stopped
+[2013-10-02 15:27:14,277][INFO ][node                     ] [Solarman] closing ...
+[2013-10-02 15:27:14,288][INFO ][node                     ] [Solarman] closed

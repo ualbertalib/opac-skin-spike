@@ -1,9 +1,43 @@
 <!doctype html>
-<head><title>search results</title></head>
+<head><title>search results</title>
+<script type="text/javascript" src="../../vendor/jquery/1.7.1/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+<script type="text/javascript" src="../../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../../vendor/linkify/1.0/jquery.linkify-1.0-min.js"></script>
+<link rel="stylesheet" href="../../vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.css">
+<script type="text/javascript" src="../../vendor/jquery-ui-1.8.18.custom/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="../../jquery.facetview.js"></script>
+<link rel="stylesheet" href="../../css/style.css">
+<link rel="stylesheet" href="../../css/facetview.css">
+
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  $('.facet-view-simple').each(function() {
+  $(this).facetview({
+    search_url: 'http://localhost:9200/catalogue/_search?',
+    search_index: 'elasticsearch',
+    datatype: 'json',
+    facets: [
+        {'field':'date', 'display': 'year'}, 
+        {'field':'call', 'display': 'call number'}
+    ],
+    paging: {
+      from: 0,
+      size: 10
+    }
+  });
+});
+});
+  </script>
+</head>
 <body>
+
   <p>You searched for <%= @query %> in <%= @searchType %></p>
   <p>The catalogue returned <%= @hitcount %> results: </p>
   <p><%= @results %></p>
   <p>Catalogue search string: <%= @query_string %>
+
+  <div class="facet-view-simple"></div>
+
 </body>
 </html>

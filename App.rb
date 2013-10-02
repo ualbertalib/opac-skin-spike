@@ -27,7 +27,7 @@ get "/search/:searchType/:query" do
   erb :results
 end
 
-get "/hello/:name" do
-  params[:name]
+get "/local" do
+  erb :local
 end
 
