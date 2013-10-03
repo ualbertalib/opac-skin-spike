@@ -1,2 +1,8 @@
 body { background-color: #eee; }
 .catalogue_record { line-height: 75%; }
+#facets { float: left; 
+          width: 12%;
+}
+#results { float: left;
+           width: 88%;
+}

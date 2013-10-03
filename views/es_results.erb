@@ -7,16 +7,7 @@
   <p>You searched for <%= @query %> in <%= @searchType %></p>
   <p>The catalogue returned <%= @hitcount %> results: </p>
   <hr />
-  <% @results.each do |rec| %>
-    <%= rec.title %> / <%= rec.author %><br />
-    <%= rec.date %><br />
-    <%= rec.call %><br /><br />
-    <%= rec.isbn %><br />
-    <%= rec.oclc %><br />
-    <%= rec.url %><br />
-    <hr />
-  <% end %>
-  <hr />
+  <div id="facets">
   Facets: 
   <% @results.facets["date"]['terms'].each do |f| %>
     <%= f['term'].to_s %> (<%= f['count'] %>)<br />
@@ -24,6 +15,22 @@
  <% @results.facets["author"]['terms'].each do |f| %>
     <%= f['term'] %> (<%= f['count'] %>)<br />
   <% end %>
+  </div>
+
+  <div id="results">
+  <% @results.each do |rec| %>
+    <a href="/record/<%= rec.id %>"><%= rec.title %></a> / <%= rec.author %><br />
+    Year of Publication: <%= rec.date %><br />
+    Call Number: <%= rec.call %><br /><br />
+    ISBN: <%= rec.isbn %><br />
+    OCLC Number: <%= rec.oclc %><br />
+    <% unless rec.url.empty? then %>
+      <a href="<%= rec.url %>">Electronic Access</a><br />
+    <% end %>
+    <hr />
+  <% end %>
+  </div>
+  <hr />
 
   <p>Catalogue search string: <%= @query_string %>
 
