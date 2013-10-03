@@ -3,7 +3,7 @@ require "active_support/core_ext"
 require "json"
 require "tire"
 
-module QuickOpac
+module Symphony2Json
   
   @@json_results = []
 
@@ -29,6 +29,21 @@ module QuickOpac
 
   def hitcount
     @hitcount
+  end
+
+  def query_elasticsearch
+    s = Tire.search("catalogue") do
+      query do
+        string "*"
+      end
+      facet "date" do
+        terms :date
+      end
+      facet "author" do
+        terms :author
+      end
+    end
+    s.results
   end
 
 end

@@ -1,0 +1,17 @@
+<!doctype html>
+<head><title>search results</title>
+  <link rel="stylesheet" href="../../style.css"/>
+</head>
+<body>
+
+  <p>You searched for <%= @query %> in <%= @searchType %></p>
+  <p>The catalogue returned <%= @hitcount %> results: </p>
+  <hr />
+  <% @results.each do |rec| %>
+    <p class="catalogue_record"><%= rec %></p><hr />
+  <% end %>
+  <p>Catalogue search string: <%= @query_string %>
+
+
+</body>
+</html>

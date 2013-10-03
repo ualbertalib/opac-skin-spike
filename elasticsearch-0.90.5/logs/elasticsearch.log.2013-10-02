@@ -1,0 +1,12 @@
+[2013-10-03 08:40:18,836][WARN ][bootstrap                ] jvm uses the client vm, make sure to run `java` with the server vm for best performance by adding `-server` to the command line
+[2013-10-03 08:40:18,930][INFO ][node                     ] [Neurotap] version[0.90.5], pid[12003], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-03 08:40:18,931][INFO ][node                     ] [Neurotap] initializing ...
+[2013-10-03 08:40:18,937][INFO ][plugins                  ] [Neurotap] loaded [], sites []
+[2013-10-03 08:40:21,302][INFO ][node                     ] [Neurotap] initialized
+[2013-10-03 08:40:21,302][INFO ][node                     ] [Neurotap] starting ...
+[2013-10-03 08:40:21,449][INFO ][transport                ] [Neurotap] bound_address {inet[/0:0:0:0:0:0:0:0:9301]}, publish_address {inet[/129.128.217.111:9301]}
+[2013-10-03 08:40:24,494][INFO ][cluster.service          ] [Neurotap] new_master [Neurotap][I2MWA-6cQ3qJ1YO-9go1Hw][inet[/129.128.217.111:9301]], reason: zen-disco-join (elected_as_master)
+[2013-10-03 08:40:24,557][INFO ][discovery                ] [Neurotap] elasticsearch/I2MWA-6cQ3qJ1YO-9go1Hw
+[2013-10-03 08:40:24,593][INFO ][http                     ] [Neurotap] bound_address {inet[/0:0:0:0:0:0:0:0:9201]}, publish_address {inet[/129.128.217.111:9201]}
+[2013-10-03 08:40:24,593][INFO ][node                     ] [Neurotap] started
+[2013-10-03 08:40:24,636][INFO ][gateway                  ] [Neurotap] recovered [0] indices into cluster_state

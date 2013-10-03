@@ -1,0 +1,32 @@
+<!doctype html>
+<head><title>search results</title>
+  <link rel="stylesheet" href="../../style.css"/>
+</head>
+<body>
+
+  <p>You searched for <%= @query %> in <%= @searchType %></p>
+  <p>The catalogue returned <%= @hitcount %> results: </p>
+  <hr />
+  <% @results.each do |rec| %>
+    <%= rec.title %> / <%= rec.author %><br />
+    <%= rec.date %><br />
+    <%= rec.call %><br /><br />
+    <%= rec.isbn %><br />
+    <%= rec.oclc %><br />
+    <%= rec.url %><br />
+    <hr />
+  <% end %>
+  <hr />
+  Facets: 
+  <% @results.facets["date"]['terms'].each do |f| %>
+    <%= f['term'].to_s %> (<%= f['count'] %>)<br />
+  <% end %><br /><br />
+ <% @results.facets["author"]['terms'].each do |f| %>
+    <%= f['term'] %> (<%= f['count'] %>)<br />
+  <% end %>
+
+  <p>Catalogue search string: <%= @query_string %>
+
+
+</body>
+</html>

@@ -1,9 +1,7 @@
 require "nokogiri"
 require "active_support/core_ext"
-require "json"
-require "tire"
 
-module QuickOpac
+module Symphony2Html
   
   @@html_results = []
 
