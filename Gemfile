@@ -8,4 +8,5 @@ gem "tire"
 gem "sinatra"
 gem "shotgun"
 gem "unicorn"
+gem "rvm-capistrano"
 

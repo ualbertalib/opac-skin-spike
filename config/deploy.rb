@@ -1,3 +1,5 @@
+require "rvm-capistrano"
+
 set :application, "neos_catalogue_lite"
 set :repository,  "http://github.com/ualbertalib/neos_catalogue_lite.git"
 
@@ -11,7 +13,7 @@ role :db,  "142.244.35.88", :primary=>true # This is where Rails migrations will
 
 set :user, 'sam'
 set :use_sudo, false
-set :deploy_to, application
+set :deploy_to, "/home/sam/#{application}"
 set :deploy_via, :remote_cache
 
 
@@ -32,7 +34,8 @@ namespace :deploy do
     run "unicorn"
   end
   task :stop do ; end
-  #task :restart, :roles => :app, :except => { :no_release => true } do
+  task :restart, :roles => :app, :except => { :no_release => true } do
    # run "touch #{File.join(current_path,'tmp','restart.txt')}"
-  #end
+    #run "unicorn"
+  end
 end
