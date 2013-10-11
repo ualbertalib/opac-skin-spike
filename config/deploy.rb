@@ -28,9 +28,11 @@ namespace :deploy do
   task :bundle_gems do
     run "cd #{deploy_to}/current && bundle install vendor/gems"
   end
-  task :start do ; end
-  task :stop do ; end
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "touch #{File.join(current_path,'tmp','restart.txt')}"
+  task :start do 
+    run "unicorn"
   end
+  task :stop do ; end
+  #task :restart, :roles => :app, :except => { :no_release => true } do
+   # run "touch #{File.join(current_path,'tmp','restart.txt')}"
+  #end
 end

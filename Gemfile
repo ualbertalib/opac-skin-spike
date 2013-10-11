@@ -7,4 +7,5 @@ gem "tire"
 #gem "elasticsearch"
 gem "sinatra"
 gem "shotgun"
+gem "unicorn"
 
