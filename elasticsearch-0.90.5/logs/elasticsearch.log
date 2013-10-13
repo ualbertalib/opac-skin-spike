@@ -168,3 +168,20 @@
 [2013-10-03 13:00:49,348][INFO ][node                     ] [Hugh Jones] stopped
 [2013-10-03 13:00:49,348][INFO ][node                     ] [Hugh Jones] closing ...
 [2013-10-03 13:00:49,359][INFO ][node                     ] [Hugh Jones] closed
+[2013-10-13 11:58:20,196][INFO ][node                     ] [Mys-Tech] version[0.90.5], pid[86819], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-13 11:58:20,210][INFO ][node                     ] [Mys-Tech] initializing ...
+[2013-10-13 11:58:20,356][INFO ][plugins                  ] [Mys-Tech] loaded [], sites []
+[2013-10-13 11:58:39,793][INFO ][node                     ] [Mys-Tech] initialized
+[2013-10-13 11:58:39,793][INFO ][node                     ] [Mys-Tech] starting ...
+[2013-10-13 11:58:41,029][INFO ][transport                ] [Mys-Tech] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.0.10:9300]}
+[2013-10-13 11:58:45,102][INFO ][cluster.service          ] [Mys-Tech] new_master [Mys-Tech][itofpbVtQCmm5CHJeDDc0A][inet[/192.168.0.10:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-13 11:58:45,508][INFO ][discovery                ] [Mys-Tech] elasticsearch/itofpbVtQCmm5CHJeDDc0A
+[2013-10-13 11:58:45,606][INFO ][http                     ] [Mys-Tech] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.0.10:9200]}
+[2013-10-13 11:58:45,606][INFO ][node                     ] [Mys-Tech] started
+[2013-10-13 11:58:45,759][INFO ][gateway                  ] [Mys-Tech] recovered [0] indices into cluster_state
+[2013-10-13 11:58:52,466][INFO ][cluster.metadata         ] [Mys-Tech] [catalogue] creating index, cause [api], shards [5]/[1], mappings [catalogue]
+[2013-10-13 11:58:53,355][INFO ][cluster.metadata         ] [Mys-Tech] [catalogue] update_mapping [catalogue] (dynamic)
+[2013-10-13 11:59:06,194][INFO ][node                     ] [Mys-Tech] stopping ...
+[2013-10-13 11:59:06,233][INFO ][node                     ] [Mys-Tech] stopped
+[2013-10-13 11:59:06,234][INFO ][node                     ] [Mys-Tech] closing ...
+[2013-10-13 11:59:06,240][INFO ][node                     ] [Mys-Tech] closed

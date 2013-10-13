@@ -74,6 +74,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  capistrano
   json
   nokogiri
   rvm-capistrano
