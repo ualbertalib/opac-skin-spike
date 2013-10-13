@@ -26,18 +26,20 @@ set :unicorn_pid, "#{shared_path}/pids/unicorn.pid"
  
 #set :public_children, ["css","img","js"]
  
-#namespace :deploy do
+namespace :deploy do
+
+# need to add task to start elasticsearch (also, server need Java to run elasticsearch)
+#
+ task :restart do
+   run "if [ -f #{unicorn_pid} ]; then kill -USR2 `cat #{unicorn_pid}`; else cd #{current_path} && bundle exec unicorn -c #{unicorn_conf} -E #{rack_env} -D; fi"
+ end
  
-#  task :restart do
-#    run "if [ -f #{unicorn_pid} ]; then kill -USR2 `cat #{unicorn_pid}`; else cd #{current_path} && bundle exec unicorn -c #{unicorn_conf} -E #{rack_env} -D; fi"
-#  end
+ task :start do
+   run "cd #{current_path} && bundle exec unicorn -c #{unicorn_conf} -E #{rack_env} -D"
+ end
  
-#  task :start do
-#    run "cd #{current_path} && bundle exec unicorn -c #{unicorn_conf} -E #{rack_env} -D"
-#  end
+ task :stop do
+   run "if [ -f #{unicorn_pid} ]; then kill -QUIT `cat #{unicorn_pid}`; fi"
+ end
  
-#  task :stop do
-#    run "if [ -f #{unicorn_pid} ]; then kill -QUIT `cat #{unicorn_pid}`; fi"
-#  end
- 
-#end
+end
