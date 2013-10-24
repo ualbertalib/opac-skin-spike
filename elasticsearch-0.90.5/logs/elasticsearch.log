@@ -88,3 +88,24 @@
 [2013-10-24 09:08:30,286][INFO ][node                     ] [Yeti] stopped
 [2013-10-24 09:08:30,287][INFO ][node                     ] [Yeti] closing ...
 [2013-10-24 09:08:30,292][INFO ][node                     ] [Yeti] closed
+[2013-10-24 09:15:39,278][INFO ][node                     ] [Impala] version[0.90.5], pid[15616], build[c8714e8/2013-09-17T12:50:20Z]
+[2013-10-24 09:15:39,278][INFO ][node                     ] [Impala] initializing ...
+[2013-10-24 09:15:39,286][INFO ][plugins                  ] [Impala] loaded [], sites []
+[2013-10-24 09:15:41,951][INFO ][node                     ] [Impala] initialized
+[2013-10-24 09:15:41,951][INFO ][node                     ] [Impala] starting ...
+[2013-10-24 09:15:42,079][INFO ][transport                ] [Impala] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/10.255.254.239:9300]}
+[2013-10-24 09:15:45,135][INFO ][cluster.service          ] [Impala] new_master [Impala][ANq4YYLJRYKJKGbfBS5qYg][inet[/10.255.254.239:9300]], reason: zen-disco-join (elected_as_master)
+[2013-10-24 09:15:45,159][INFO ][discovery                ] [Impala] elasticsearch/ANq4YYLJRYKJKGbfBS5qYg
+[2013-10-24 09:15:45,172][INFO ][http                     ] [Impala] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/10.255.254.239:9200]}
+[2013-10-24 09:15:45,172][INFO ][node                     ] [Impala] started
+[2013-10-24 09:15:45,812][INFO ][gateway                  ] [Impala] recovered [1] indices into cluster_state
+[2013-10-24 09:18:11,905][INFO ][cluster.metadata         ] [Impala] [catalogue] deleting index
+[2013-10-24 09:18:12,221][INFO ][cluster.metadata         ] [Impala] [catalogue] creating index, cause [api], shards [5]/[1], mappings [catalogue]
+[2013-10-24 09:18:12,535][INFO ][cluster.metadata         ] [Impala] [catalogue] update_mapping [catalogue] (dynamic)
+[2013-10-24 09:18:19,175][INFO ][cluster.metadata         ] [Impala] [catalogue] deleting index
+[2013-10-24 09:18:19,299][INFO ][cluster.metadata         ] [Impala] [catalogue] creating index, cause [api], shards [5]/[1], mappings [catalogue]
+[2013-10-24 09:18:20,123][INFO ][cluster.metadata         ] [Impala] [catalogue] update_mapping [catalogue] (dynamic)
+[2013-10-24 09:18:36,289][INFO ][node                     ] [Impala] stopping ...
+[2013-10-24 09:18:36,336][INFO ][node                     ] [Impala] stopped
+[2013-10-24 09:18:36,336][INFO ][node                     ] [Impala] closing ...
+[2013-10-24 09:18:36,343][INFO ][node                     ] [Impala] closed
