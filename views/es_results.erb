@@ -4,21 +4,25 @@
 </head>
 <body>
 
-  <p>You searched for <%= @query %> in <%= @searchType %></p>
+  <p>You searched for "<%= @query %>" in "<%= @searchType %>"</p>
   <p>The catalogue returned <%= @hitcount %> results: </p>
   <hr />
   <div id="facets">
-  Facets: 
+  <p>Facets:</p> 
+  <p>Date</p>
   <% @results.facets["date"]['terms'].each do |f| %>
-    <%= f['term'].to_s %> (<%= f['count'] %>)<br />
-  <% end %><br /><br />
+    <a href="#"><%= f['term'].to_s %> (<%= f['count'] %>)</a><br />
+  <% end %><br />
+  <p>Author</p>
  <% @results.facets["author"]['terms'].each do |f| %>
-    <%= f['term'] %> (<%= f['count'] %>)<br />
+    <a href="#"><%= f['term'] %> (<%= f['count'] %>)</a><br />
   <% end %>
   </div>
 
   <div id="results">
+  <p>Results:</p>
   <% @results.each do |rec| %>
+    <div class="brief_record">
     <a href="/record/<%= rec.id %>"><%= rec.title %></a> / <%= rec.author %><br />
     Year of Publication: <%= rec.date %><br />
     Call Number: <%= rec.call %><br /><br />
@@ -27,6 +31,7 @@
     <% unless rec.url.empty? then %>
       <a href="<%= rec.url %>">Electronic Access</a><br />
     <% end %>
+    </div>
     <hr />
   <% end %>
   </div>

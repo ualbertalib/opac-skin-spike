@@ -7,4 +7,6 @@ gem "tire"
 #gem "elasticsearch"
 gem "sinatra"
 gem "shotgun"
-
+gem "unicorn"
+gem "rvm-capistrano"
+gem "capistrano"
