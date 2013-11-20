@@ -1,8 +1,10 @@
-body { background-color: #eee; }
+body { background-color: #eee; font-family: "Arial"; }
 .catalogue_record { line-height: 75%; }
+.brief_record { padding-top: 5px; padding-bottom: 5px;}
 #facets { float: left; 
-          width: 12%;
+          width: 25%;
 }
 #results { float: left;
-           width: 88%;
+           width: 75%;
 }
+

@@ -52,6 +52,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
+  capistrano
   json
   nokogiri
   shotgun
